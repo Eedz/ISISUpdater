@@ -127,8 +127,8 @@ namespace ITCUpdater
 
                 ver = f.Name.Substring(verLocation + "Ver.".Length, extLocation - verLocation - "Ver.".Length);
 
-                if (!Double.TryParse(ver, out double result))
-                    continue;
+                //if (!Double.TryParse(ver, out double result))
+                 //   continue;
 
                 string[] digits = ver.Split(new char[] { '.' }, StringSplitOptions.RemoveEmptyEntries);
                 Version v;
